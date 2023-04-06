@@ -56,10 +56,10 @@ struct LoginPage: View {
                             Text("Sign up").fontWeight(.heavy).foregroundColor(Color(.magenta).opacity(0.7))
                         })
                     }
-                   
+                    
                 }
             }.padding(.all).frame(maxWidth: .infinity, maxHeight: .infinity).background(Color("CustomColor"))
-                .navigationTitle("Login").navigationBarHidden(true)
+                .navigationTitle("Sign in")
         }.ignoresSafeArea(.all, edges: .all)
         
     }

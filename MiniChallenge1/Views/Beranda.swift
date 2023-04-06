@@ -17,7 +17,7 @@ struct Beranda: View {
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor(.white)]
         UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor(.white)]
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).backgroundColor = .white
-        print("halo")
+    
         
         
     }
@@ -38,8 +38,8 @@ struct Beranda: View {
                     
                     VStack{
                         HStack{
-                            NavigationLink(destination: FavoritePage()){
-                                Image(systemName: "heart").font(.system(size: 24)).foregroundColor(.purple)
+                            NavigationLink(destination: ProfilePage()){
+                                Image(systemName: "person").font(.system(size: 24)).foregroundColor(.purple)
                             }
                             
                             Spacer()

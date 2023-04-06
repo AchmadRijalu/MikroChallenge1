@@ -26,6 +26,7 @@
 		77DE453F29DCE3AD008E7E68 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DE453E29DCE3AD008E7E68 /* GameModel.swift */; };
 		77DE454129DD1971008E7E68 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DE454029DD1971008E7E68 /* SearchItem.swift */; };
 		77DE454729DDD5BF008E7E68 /* RegisterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DE454629DDD5BF008E7E68 /* RegisterPage.swift */; };
+		77DE454929DE464F008E7E68 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DE454829DE464F008E7E68 /* ProfilePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		77DE453E29DCE3AD008E7E68 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		77DE454029DD1971008E7E68 /* SearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
 		77DE454629DDD5BF008E7E68 /* RegisterPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPage.swift; sourceTree = "<group>"; };
+		77DE454829DE464F008E7E68 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				77DE453729DC1AC8008E7E68 /* LoginPage.swift */,
 				77DE453929DC234D008E7E68 /* FavoritePage.swift */,
 				77DE454629DDD5BF008E7E68 /* RegisterPage.swift */,
+				77DE454829DE464F008E7E68 /* ProfilePage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77DE454929DE464F008E7E68 /* ProfilePage.swift in Sources */,
 				77DE454129DD1971008E7E68 /* SearchItem.swift in Sources */,
 				77DE454729DDD5BF008E7E68 /* RegisterPage.swift in Sources */,
 				77DE451429DA55F2008E7E68 /* ContentView.swift in Sources */,

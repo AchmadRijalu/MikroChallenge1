@@ -36,7 +36,7 @@ struct GetGameDetailPage: View {
               
             }
             HStack{
-                Text("Resident Evil 4 Remake").foregroundColor(.white).font(.system(size: 36, weight: .bold))
+                Text("Resident Evil 4 Remake").foregroundColor(.white).font(.system(size: 30, weight: .bold))
                 Spacer()
             }.padding(EdgeInsets(top: 0, leading: 26, bottom: 8, trailing: 12))
             VStack{
