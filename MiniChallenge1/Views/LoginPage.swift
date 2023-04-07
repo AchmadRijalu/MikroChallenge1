@@ -29,12 +29,12 @@ struct LoginPage: View {
                 HStack{
                     Image(systemName: "envelope").foregroundColor(.white).font(.title2)
                     TextField("Enter Email...", text: $email).padding()
-                        .background(Color.white.opacity(0.12)).foregroundColor(.white).fontWeight(.semibold).cornerRadius(12).padding(.all).keyboardType(.emailAddress)
+                        .background(Color.white.opacity(0.8)).foregroundColor(.white).fontWeight(.semibold).cornerRadius(12).padding(.all).keyboardType(.emailAddress)
                 }
                 HStack{
                     Image(systemName: "lock").foregroundColor(.white).font(.title2)
                     TextField("Enter Email...", text: $password).padding()
-                        .background(Color.white.opacity(0.12)).foregroundColor(.white).fontWeight(.semibold).cornerRadius(12).padding(.all)
+                        .background(Color.white.opacity(0.8)).foregroundColor(.white).fontWeight(.semibold).cornerRadius(12).padding(.all)
                 }
                 NavigationLink(destination: Beranda(), isActive:$signIn){
                     Button(action: {
@@ -59,8 +59,8 @@ struct LoginPage: View {
                     
                 }
             }.padding(.all).frame(maxWidth: .infinity, maxHeight: .infinity).background(Color("CustomColor"))
-                .navigationTitle("Sign in")
-        }.ignoresSafeArea(.all, edges: .all)
+                .navigationTitle("Sign in").toolbar(.hidden)
+        }.accentColor(Color(.magenta)).ignoresSafeArea(.all, edges: .all)
         
     }
 }

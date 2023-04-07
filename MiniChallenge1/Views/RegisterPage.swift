@@ -64,9 +64,11 @@ struct RegisterPage: View {
                 Spacer()
                 
                 
-            }.padding(.all).frame(maxWidth: .infinity, maxHeight: .infinity).background(Color("CustomColor"))
+            }.accentColor(Color(.magenta)).padding(.all).frame(maxWidth: .infinity, maxHeight: .infinity).background(Color("CustomColor"))
                 .navigationTitle("Sign up").navigationBarTitleDisplayMode(.large)
-        }  }
+        }
+        
+    }
 }
 
 struct RegisterPage_Previews: PreviewProvider {

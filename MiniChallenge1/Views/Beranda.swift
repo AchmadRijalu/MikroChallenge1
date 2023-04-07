@@ -11,6 +11,8 @@ struct Beranda: View {
     @State private var searchText = "";
     @State  var isCheck = false
     @FocusState var isFocused: Bool
+    @AppStorage("darkModeEnabled") private var darkmodeEnabled = false
+    @AppStorage("systemThemeEnabled") private var systemThemeEnabled = false
     
     let allGames = ["Red Dead Redemption 2", "Resident Evil 7"]
     init() {
@@ -38,7 +40,7 @@ struct Beranda: View {
                     
                     VStack{
                         HStack{
-                            NavigationLink(destination: ProfilePage()){
+                            NavigationLink(destination: ProfilePage(darkModeEnabled: $darkmodeEnabled, systemThemeEnabled: $systemThemeEnabled)){
                                 Image(systemName: "person").font(.system(size: 24)).foregroundColor(.purple)
                             }
                             
@@ -76,7 +78,7 @@ struct GameDashboardItem: View {
         //        RoundedRectangle(cornerRadius: 28).fill(.white).frame(maxWidth: .infinity, maxHeight: 700).padding(20)
         VStack{
             NavigationView(){
-                NavigationLink(destination: GetGameDetailPage(ID: "j5Xv2lM9wes")) {
+                NavigationLink(destination: GetGameDetailPage(ID: "j5Xv2lM9wes", gamePlayID: "puWTz8toRHc")) {
                     ZStack(alignment: .bottom){
                         Image(gameCard.image).resizable().frame(maxWidth: .infinity, maxHeight: .infinity)
                         Rectangle()

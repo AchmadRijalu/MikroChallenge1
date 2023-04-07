@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77A63BB329DFF92E0039156D /* SelectedRowFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A63BB229DFF92E0039156D /* SelectedRowFilter.swift */; };
 		77DE451229DA55F2008E7E68 /* MiniChallenge1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DE451129DA55F2008E7E68 /* MiniChallenge1App.swift */; };
 		77DE451429DA55F2008E7E68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DE451329DA55F2008E7E68 /* ContentView.swift */; };
 		77DE451629DA55F3008E7E68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77DE451529DA55F3008E7E68 /* Assets.xcassets */; };
@@ -27,9 +28,11 @@
 		77DE454129DD1971008E7E68 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DE454029DD1971008E7E68 /* SearchItem.swift */; };
 		77DE454729DDD5BF008E7E68 /* RegisterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DE454629DDD5BF008E7E68 /* RegisterPage.swift */; };
 		77DE454929DE464F008E7E68 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DE454829DE464F008E7E68 /* ProfilePage.swift */; };
+		77DE454B29DE6DBB008E7E68 /* OnBoardingPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DE454A29DE6DBB008E7E68 /* OnBoardingPlatform.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		77A63BB229DFF92E0039156D /* SelectedRowFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedRowFilter.swift; sourceTree = "<group>"; };
 		77DE450E29DA55F2008E7E68 /* MiniChallenge1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallenge1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77DE451129DA55F2008E7E68 /* MiniChallenge1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallenge1App.swift; sourceTree = "<group>"; };
 		77DE451329DA55F2008E7E68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		77DE454029DD1971008E7E68 /* SearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
 		77DE454629DDD5BF008E7E68 /* RegisterPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPage.swift; sourceTree = "<group>"; };
 		77DE454829DE464F008E7E68 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
+		77DE454A29DE6DBB008E7E68 /* OnBoardingPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPlatform.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 				77DE453929DC234D008E7E68 /* FavoritePage.swift */,
 				77DE454629DDD5BF008E7E68 /* RegisterPage.swift */,
 				77DE454829DE464F008E7E68 /* ProfilePage.swift */,
+				77DE454A29DE6DBB008E7E68 /* OnBoardingPlatform.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 				77DE451F29DA5CF7008E7E68 /* GameDashboardItem.swift */,
 				77DE452D29DB8CEF008E7E68 /* CustomBackButton.swift */,
 				77DE454029DD1971008E7E68 /* SearchItem.swift */,
+				77A63BB229DFF92E0039156D /* SelectedRowFilter.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -218,6 +224,7 @@
 				77DE453029DBB181008E7E68 /* OverviewPage.swift in Sources */,
 				77DE453829DC1AC8008E7E68 /* LoginPage.swift in Sources */,
 				77DE453F29DCE3AD008E7E68 /* GameModel.swift in Sources */,
+				77A63BB329DFF92E0039156D /* SelectedRowFilter.swift in Sources */,
 				77DE453C29DCC812008E7E68 /* GameCard.swift in Sources */,
 				77DE452429DA8523008E7E68 /* GetGameDetailPage.swift in Sources */,
 				77DE453229DBC199008E7E68 /* DetailsPage.swift in Sources */,
@@ -225,6 +232,7 @@
 				77DE451229DA55F2008E7E68 /* MiniChallenge1App.swift in Sources */,
 				77DE452E29DB8CEF008E7E68 /* CustomBackButton.swift in Sources */,
 				77DE453A29DC234D008E7E68 /* FavoritePage.swift in Sources */,
+				77DE454B29DE6DBB008E7E68 /* OnBoardingPlatform.swift in Sources */,
 				77DE452929DB8CBD008E7E68 /* OnBoarding.swift in Sources */,
 				77DE452029DA5CF7008E7E68 /* GameDashboardItem.swift in Sources */,
 			);

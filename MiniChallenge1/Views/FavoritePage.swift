@@ -22,13 +22,13 @@ struct FavoritePage: View {
         NavigationStack {
             ScrollView {
                 VStack(){
-                    NavigationLink(destination: GetGameDetailPage(ID: "j5Xv2lM9wes")){
-                        FavoriteItem(image: "re4", name: "Resident Evil 4 Remake", price: "900.000")
+                    NavigationLink(destination: GetGameDetailPage(ID: "j5Xv2lM9wes", gamePlayID: "puWTz8toRHc")){
+                        FavoriteItem(image: "re4", name: "Resident Evil 4 Remake", genre: "Action")
                             .navigationTitle("Favorites")
                     }
                     
-                    FavoriteItem(image: "hl", name: "Hogwarts Legacy", price: "800.000")
-                    FavoriteItem(image: "rdr2", name: "Red Dead Redemption 2", price: "500.000")
+                    FavoriteItem(image: "hl", name: "Hogwarts Legacy", genre:  "RPG")
+                    FavoriteItem(image: "rdr2", name: "Red Dead Redemption 2", genre: "Adventure")
                         .navigationTitle("Favorites")
                 }.foregroundColor(.white)
                 Spacer()
@@ -49,7 +49,7 @@ struct FavoritePage: View {
 struct FavoriteItem:View{
     var image:String
     var name:String
-    var price:String
+    var genre:String
     
     var body: some View{
         VStack {
@@ -62,13 +62,15 @@ struct FavoriteItem:View{
                     }.padding(.top, 8)
                     Spacer()
                     HStack{
-                       
-                        Image(systemName: "dollarsign.circle").font(.system(size: 20)).foregroundColor(.white)
-                        Text("Price : \(String(price))").font(.system(size: 15, weight: .semibold)).border(Color("CustomColor")).padding(8).foregroundColor(.white).background(Color("CustomColor")).cornerRadius(8)
+                        Text(" \(String(genre))").foregroundColor(.white  ).fontWeight(.semibold).padding(.all, 7).background(.clear ).cornerRadius(10).overlay( /// apply a rounded border
+                            RoundedRectangle(cornerRadius: 4)
+                                .stroke(Color(.white), lineWidth: 1)
+                        )
+                      
                         Spacer()
                     }
-                }.padding(.leading, 4)
-                Image(systemName: "heart.fill").padding(.all, 8).background(.white).clipShape(Circle()).font(.system(size: 24)).foregroundColor(.purple).padding(.trailing,4)
+                }.padding(.leading, 8)
+                Image(systemName: "heart.fill").padding(.all, 8).font(.system(size: 24)).foregroundColor(.purple).padding(.trailing,4)
             }
         }.padding(.all, 6).frame(width: 329, height: 80).background(Color("CustomColorSecond")).cornerRadius(12).padding(.bottom, 12)
         

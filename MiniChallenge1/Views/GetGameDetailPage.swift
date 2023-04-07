@@ -13,6 +13,7 @@ struct GetGameDetailPage: View {
     
     @State var index = 0
     let ID:String
+    let gamePlayID:String
     
     var body: some View {
         ScrollView{
@@ -83,19 +84,23 @@ struct GetGameDetailPage: View {
                    
                 }.tabViewStyle(PageTabViewStyle(indexDisplayMode:.never))
 
-            }.padding().frame(minWidth: 300, idealWidth: 400, maxWidth: 600, minHeight: 400, idealHeight: 700, maxHeight: 500, alignment: .top).background(Color("CustomColorSecond")).cornerRadius(24
+            }.padding().frame(minWidth: 300, idealWidth: 400, minHeight: 100, idealHeight: self.index == 0 ? 700 : 400, maxHeight: 500, alignment: .top).background(Color("CustomColorSecond")).cornerRadius(24
             ).padding(.horizontal, 16).shadow(color: .purple, radius: 10, x: 1, y: 14)
-            
-            HStack{
-                Image("ashleyleft").resizable().frame(width: 32.0, height: 32.0)
-                Spacer()
-            }.padding(.horizontal, 16)
             HStack{
                 Spacer()
                 Image("leonright").resizable().frame(width: 300, height: 300)
                 
             }.padding(.horizontal, 16)
-           
+            
+            HStack{
+                Text("Gameplay").foregroundColor(.white).font(.system(size: 24, weight: .bold))
+                Spacer()
+            }.padding(EdgeInsets(top: 12, leading: 26, bottom: 12, trailing: 12))
+            
+            VStack{
+                Video(videoID: gamePlayID).padding().frame(width: .infinity, height: 340 )
+
+            }.frame(width: 400, height: 350)
         }.background(Color("CustomColor"))
            
     }
@@ -120,7 +125,7 @@ struct Video: UIViewRepresentable{
 
 struct GetGameDetailPage_Previews: PreviewProvider {
     static var previews: some View {
-        GetGameDetailPage(ID: "")
+        GetGameDetailPage(ID: "", gamePlayID: "")
    
     }
 }
